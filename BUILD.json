@@ -1,9 +1,9 @@
 {
  "generator": "docs/synthesis/triage/tools/build_triage_pack.py",
- "built_at": "2026-10-08T23:00:44+00:00",
+ "built_at": "2026-10-08T23:07:58+00:00",
  "source": {
   "repo": "/home/xrim/triage-design-system",
-  "commit": "89a5718b71865cd6d66df7d55adaa9665a760700",
+  "commit": "97cabe5cd03f6ec3a2ebe6f6fdefcbc5e3cf55f2",
   "version": "0.12.1"
  },
  "counts": {

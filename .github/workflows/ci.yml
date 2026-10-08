@@ -1,0 +1,35 @@
+name: authority-ci
+
+on: [push, pull_request]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout this authority
+        uses: actions/checkout@v4
+      - name: checkout the kernel + tools (public, pinned to master)
+        uses: actions/checkout@v4
+        with:
+          repository: vjsyong/design-authority
+          path: _da
+      - name: pack parses (overview)
+        run: python3 _da/tools/da.py --pack . overview
+      - name: golden agreement
+        if: hashFiles('golden.json') != ''
+        run: python3 _da/tools/da.py --pack . golden --file golden.json
+      - name: site manifest verification
+        if: hashFiles('site/archive-manifest.json') != ''
+        run: python3 _da/tools/verify_build_manifest.py site
+      - name: generated-chrome traceability gate
+        if: hashFiles('site/styles.css') != ''
+        run: python3 _da/tools/check_artefacts_css.py --build site --pack .
+      - name: version and tag discipline
+        run: |
+          V=$(python3 -c "import json;print(json.load(open('authority.json'))['version'])")
+          echo "authority version: $V"
+          if git tag --list "v$V" | grep -q .; then
+            echo "tag v$V present"
+          else
+            echo "::warning::no tag v$V present for the current version"
+          fi

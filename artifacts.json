@@ -1697,7 +1697,9 @@
     "full-page state",
     "error page",
     "empty page",
-    "maintenance page"
+    "maintenance page",
+    "404 page",
+    "not found page"
    ],
    "body": {
     "class": "page-state",
@@ -1728,7 +1730,19 @@
    },
    "compiled_from": [
     "triage/states"
-   ]
+   ],
+   "provenance": {
+    "extended_in": "0.12.2",
+    "triggering_gaps": [
+     "gap/20261009-024914-945233"
+    ],
+    "review_decision": "owner-approved 2026-10-09 (everyday phrasings for the documented 404 state)",
+    "source_commit": "97cabe5cd03f6ec3a2ebe6f6fdefcbc5e3cf55f2",
+    "tests": [
+     "golden: '404 page' → RESOLVED component/page-state",
+     "golden: 'not found page' → RESOLVED component/page-state"
+    ]
+   }
   },
   {
    "id": "component/pager-num",

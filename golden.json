@@ -1,6 +1,6 @@
 {
  "version": "0.1",
- "pack_version": "triage 0.12.1",
+ "pack_version": "triage 0.12.2",
  "cases": [
   {
    "problem": "a primary button",
@@ -236,6 +236,16 @@
    "problem": "a bottom sheet",
    "expect": "RESOLVED",
    "expect_id": "component/sheet-end"
+  },
+  {
+   "problem": "404 page",
+   "expect": "RESOLVED",
+   "expect_id": "component/page-state"
+  },
+  {
+   "problem": "not found page",
+   "expect": "RESOLVED",
+   "expect_id": "component/page-state"
   },
   {
    "problem": "a dashboard page",

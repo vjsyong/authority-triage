@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" role="img" aria-label="Triage">
+  <rect width="24" height="24" fill="#000000"/>
+  <rect width="4" height="24" fill="#0057d9"/>
+  <path d="M9 7h10M14 7v11" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+</svg>

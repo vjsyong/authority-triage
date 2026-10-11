@@ -17,8 +17,7 @@
   square-geometry, type-face, label-tier and focus-ring checks while the
   rest stay green. Record: docs/verification/10-triage-contract.md (meta
   repository).
-- rc label per release policy: agent-produced bump, awaiting owner
-  finalization.
+- Finalized by the owner 2026-10-11 (all approved).
 
 ## 0.12.3-rc1 - 2026-10-11
 
@@ -38,8 +37,7 @@
   `gap/20261011-100129-4b5013` (triage-lint validator unavailable to
   consumers) and `gap/20261011-101032-9ed1d0` (verification contract absent
   from the triage pack; the contract work remains queued).
-- rc label per release policy: agent-produced bump, awaiting owner
-  finalization.
+- Finalized by the owner 2026-10-11 (all approved).
 
 ## 0.12.2 - 2026-10-09
 

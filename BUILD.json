@@ -1,30 +1,28 @@
 {
  "generator": "docs/synthesis/triage/tools/build_triage_pack.py",
- "built_at": "2026-10-11T10:36:48+00:00",
+ "built_at": "2026-10-11T10:41:02+00:00",
  "source": {
   "repo": "/home/xrim/triage-design-system",
   "commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
   "version": "0.13.0"
  },
  "release": {
-  "label": "triage 0.13.0-rc1",
-  "kind": "merge",
-  "based_on": "triage 0.12.3-rc1",
+  "label": "triage 0.14.0-rc1",
+  "kind": "promotion",
+  "based_on": "triage 0.13.0-rc1",
   "snapshot_commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
   "triggering_proposals": [
-   "spec/proposals/verification-levels.md",
-   "spec/proposals/density-borders.md",
-   "spec/proposals/provenance-contract.md"
+   "docs/evolution/round2/10-recipes-promotion-review.md (recipes promotion)"
   ],
   "approved": "owner-approved 2026-10-11; rc cut by agent"
  },
  "counts": {
-  "artifacts": 81,
+  "artifacts": 87,
   "rules": 20,
   "prohibitions": 6,
-  "fallbacks": 3,
+  "fallbacks": 4,
   "precedents": 1,
   "candidates": 5,
-  "golden_cases": 58
+  "golden_cases": 75
  }
 }

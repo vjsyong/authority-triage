@@ -45,6 +45,22 @@
     "never opt out of the user preference",
     "keep durations on tokens even in the reduced path"
    ]
+  },
+  {
+   "id": "fallback/native-control",
+   "kind": "fallback",
+   "title": "Native confirm() for one-way actions",
+   "statement": "Actions that are irreversible, security-relevant, or affect more than the clicked item keep a native confirm() whose sentence names the object and the consequence (INTERACTION.md, one-way set). Arming cannot carry the consequence; this is the sanctioned stop, and never a substitute for the armed pattern on ordinary entity deletes.",
+   "scope": [
+    "danger",
+    "high stakes",
+    "confirm",
+    "one-way",
+    "irreversible"
+   ],
+   "constraints": [
+    "routine entity deletes (use the armed pattern), async flows, or as a shortcut to avoid designing the armed control"
+   ]
   }
  ]
 }

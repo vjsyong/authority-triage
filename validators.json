@@ -4,7 +4,7 @@
    "name": "triage-lint",
    "title": "Triage lint engine",
    "kind": "command",
-   "workdir": "{snapshot}",
+   "workdir": "{pack}",
    "command": [
     "python3",
     "lint/triage_lint.py",
@@ -18,7 +18,7 @@
     "js"
    ],
    "rules_source": "rules.json",
-   "notes": "Runs the pinned snapshot's linter over the target path. --json report shape: findings[{rule,severity,file,line,message,excerpt,fix}], counts, by_rule, score."
+   "notes": "Runs the lint shipped inside this pack ({pack}/lint) over the target path, so consumers can validate without any external checkout (bundle: lint/, spec/rules.json, tokens/tokens.json, rename-map.json, core/, VERSION; regenerated with the pack). --json report shape: findings[{rule,severity,file,line,message,excerpt,fix}], counts, by_rule, score."
   }
  ]
 }

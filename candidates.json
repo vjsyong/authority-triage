@@ -138,6 +138,40 @@
    "provenance": {
     "source": "triage repo review + proposals"
    }
+  },
+  {
+   "id": "candidate/card-record",
+   "kind": "candidate",
+   "title": "A card record (container)",
+   "summary": "The .card/.card-h container is core furniture with no states-matrix record, so the everyday need 'a card' resolves to nothing (closest 4.0; threshold 6.5). Candidate: a card component record (or a curated alias route) so the container is citable like the rest.",
+   "emerges_from": [
+    "adoption test x06 (F-5): the fresh agent's need 'a card' stayed UNDEFINED"
+   ],
+   "evidence_present": "the class is shipped and documented in core; consumers ask for it by name",
+   "promote_when": [
+    "the review accepts a card record (states: default/nested) or an alias route",
+    "a consumer build cites the card by id in a receipt"
+   ],
+   "provenance": {
+    "source": "adoption test x06 F-5"
+   }
+  },
+  {
+   "id": "candidate/text-field-record",
+   "kind": "candidate",
+   "title": "A text-field record (input family)",
+   "summary": "Text/number/password/search/textarea inputs are element-styled with no citable record (field-err is the closest, 4.0 vs 6.5 needed), so 'a text field' stays UNDEFINED. Candidate: an input-family record with its states (focus/invalid/disabled) so forms are citable.",
+   "emerges_from": [
+    "adoption test x06 (F-5): the fresh agent's need 'a text field' stayed UNDEFINED"
+   ],
+   "evidence_present": "the element treatment is shipped; .select now has a record as the pattern to follow",
+   "promote_when": [
+    "the review accepts an input-family record (mirroring the .select precedent)",
+    "form-heavy consumers cite inputs by id in receipts"
+   ],
+   "provenance": {
+    "source": "adoption test x06 F-5"
+   }
   }
  ]
 }

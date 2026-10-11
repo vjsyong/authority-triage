@@ -1,5 +1,14 @@
 # Changelog - Triage
 
+## 0.14.1 - 2026-10-11
+
+- Two candidates filed from the adoption test (F-5, the uncatalogued-need
+  gaps): `candidate/card-record` (the .card container) and
+  `candidate/text-field-record` (the input family), each with explicit
+  promote_when bars, routed through the normal review process. No record or
+  resolution changed.
+- Finalized by the owner 2026-10-11 (all approved).
+
 ## 0.13.0-rc1 - 2026-10-11
 
 - Proposal merges from the 2026-10 review (owner-approved 2026-10-11),

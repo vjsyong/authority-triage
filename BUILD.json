@@ -1,25 +1,26 @@
 {
  "generator": "docs/synthesis/triage/tools/build_triage_pack.py",
- "built_at": "2026-10-11T10:18:36+00:00",
+ "built_at": "2026-10-11T10:31:34+00:00",
  "source": {
   "repo": "/home/xrim/triage-design-system",
-  "commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",
-  "version": "0.12.1"
+  "commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
+  "version": "0.13.0"
  },
  "release": {
-  "label": "triage 0.12.3-rc1",
-  "kind": "fix",
-  "based_on": "triage 0.12.2",
-  "snapshot_commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",
-  "triggering_gaps": [
-   "gap/20261011-100129-4b5013",
-   "gap/20261011-101032-9ed1d0"
+  "label": "triage 0.13.0-rc1",
+  "kind": "merge",
+  "based_on": "triage 0.12.3-rc1",
+  "snapshot_commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
+  "triggering_proposals": [
+   "spec/proposals/verification-levels.md",
+   "spec/proposals/density-borders.md",
+   "spec/proposals/provenance-contract.md"
   ],
-  "approved": "pending (rc cut by agent 2026-10-11; awaiting owner finalization)"
+  "approved": "owner-approved 2026-10-11; rc cut by agent"
  },
  "counts": {
-  "artifacts": 80,
-  "rules": 19,
+  "artifacts": 81,
+  "rules": 20,
   "prohibitions": 6,
   "fallbacks": 3,
   "precedents": 1,

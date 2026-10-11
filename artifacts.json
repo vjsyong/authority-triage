@@ -1737,7 +1737,7 @@
      "gap/20261009-024914-945233"
     ],
     "review_decision": "owner-approved 2026-10-09 (everyday phrasings for the documented 404 state)",
-    "source_commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",
+    "source_commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
     "tests": [
      "golden: '404 page' → RESOLVED component/page-state",
      "golden: 'not found page' → RESOLVED component/page-state"
@@ -1910,6 +1910,45 @@
    "source": {
     "repo": "triage-design-system (triage.seanyong.xyz)",
     "path": "spec/states.json (sheet-end, base.css)"
+   },
+   "compiled_from": [
+    "triage/states"
+   ]
+  },
+  {
+   "id": "component/prov",
+   "kind": "component",
+   "title": "Provenance record",
+   "summary": "Provenance record — from base.css. Documented states: default, explanation folded/expanded (<details>). A11y: The eight required fields stay visible without expanding the transcript.",
+   "status": "stable",
+   "aliases": [
+    "provenance record",
+    "prov"
+   ],
+   "body": {
+    "class": "prov",
+    "group": "Components",
+    "source_file": "base.css",
+    "states": [
+     "default",
+     "explanation folded/expanded (<details>)"
+    ],
+    "verify": [
+     ".prov",
+     ".prov-k",
+     ".prov-v",
+     ".prov details"
+    ],
+    "a11y": [
+     "The eight required fields stay visible without expanding the transcript.",
+     "Label-value pairs reuse the .kv grid; the record is addressable by a stable id so reviews and exports can cite it.",
+     "The explanation is supplementary, folds below the record and is never rendered inline as evidence."
+    ],
+    "status": "beta"
+   },
+   "source": {
+    "repo": "triage-design-system (triage.seanyong.xyz)",
+    "path": "spec/states.json (prov, base.css)"
    },
    "compiled_from": [
     "triage/states"

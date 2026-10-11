@@ -180,6 +180,17 @@
    "fix": "Add text or aria-label; never use tabindex > 0."
   },
   {
+   "id": "TDS016",
+   "name": "label-tier",
+   "severity": "info",
+   "applies_to": [
+    "css"
+   ],
+   "summary": "Label-role class (.badge, .nav-label, .cmd-group) set below the comfortable label target (13px at the 16px root).",
+   "why": "Supporting labels target 13-14px at comfortable density and 12px is reserved for tertiary metadata (timestamps in dense tables, keyboard hints, provenance footnotes). The floor stays an error; this tier check is adoption guidance, not a failure.",
+   "fix": "Use the system token (--fs-badge / --fs-nav-label) or set the label role to 13px+ (0.8125rem+)."
+  },
+  {
    "id": "INT001",
    "name": "armed-two-step-delete",
    "severity": "error",

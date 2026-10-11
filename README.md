@@ -1,6 +1,6 @@
 # Triage - authority repo
 
-Version: **0.12.3-rc1** (tag `v0.12.3-rc1`) - format 0.1
+Version: **0.13.0-rc1** (tag `v0.13.0-rc1`) - format 0.1
 
 Triage is the app-agnostic, paper-and-ink UI design authority: one token source of truth, one component runtime, one enforceable lint gate. Square corners, hairline rules, ink-on-paper surfaces, two themes (light/dark), two densities, a 35-component contract matrix, and a binding interaction standard. Dependency-free: plain CSS tokens, a small behaviour layer that degrades without JS, and generated artifacts.
 
@@ -29,11 +29,11 @@ last two when this authority ships a site).
 
 ## Versioning and rollback
 
-Versions live in `authority.json` and are tagged in git (`v0.12.3-rc1`).
+Versions live in `authority.json` and are tagged in git (`v0.13.0-rc1`).
 `CHANGELOG.md` records each bump. To roll back:
 
-    git checkout v0.12.3-rc1          # pin the exact released state
-    git switch -c rollback/v0.12.3-rc1 # or move the branch, then push
+    git checkout v0.13.0-rc1          # pin the exact released state
+    git switch -c rollback/v0.13.0-rc1 # or move the branch, then push
 
 A version bump lands with (1) the record edits, (2) an `authority.json`
 bump, (3) a CHANGELOG entry, (4) a new tag. The kernel is versionless; the

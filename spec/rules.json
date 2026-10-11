@@ -1,7 +1,7 @@
 {
   "$schema": "./rules.schema.json",
   "name": "Triage Design System \u2014 enforceable rule catalogue",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "description": "Normative rules checked by triage-lint (lint/). Each ID is stable and citable; agents and CI must treat severities as the default contract, overridable per project in .triagerc.json.",
   "rules": [
     {
@@ -182,6 +182,17 @@
       "summary": "Interactive element with no accessible name (empty button/link, no aria-label), or a positive tabindex.",
       "why": "Icon-only controls without labels are unusable with assistive tech; positive tabindex breaks natural order (WCAG 2.4.3).",
       "fix": "Add text or aria-label; never use tabindex > 0."
+    },
+    {
+      "id": "TDS016",
+      "name": "label-tier",
+      "severity": "info",
+      "applies_to": [
+        "css"
+      ],
+      "summary": "Label-role class (.badge, .nav-label, .cmd-group) set below the comfortable label target (13px at the 16px root).",
+      "why": "Supporting labels target 13-14px at comfortable density and 12px is reserved for tertiary metadata (timestamps in dense tables, keyboard hints, provenance footnotes). The floor stays an error; this tier check is adoption guidance, not a failure.",
+      "fix": "Use the system token (--fs-badge / --fs-nav-label) or set the label role to 13px+ (0.8125rem+)."
     }
   ],
   "score": {

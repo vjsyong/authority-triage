@@ -1,6 +1,6 @@
 {
   "note": "Triage Design System \u2014 rename map applied by build.py to the mail-triage pack (css/base.css, css/patterns.css, js/*.js, skeletons/*.html) and to the portfolio sources. Ordered: longer/more specific names first. Matching uses token boundaries (no leading or trailing word/hyphen characters), so .arow2/.arow and .lsteps/.lstep cannot clobber each other.",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "pairs": [
     [
       "with-asb",

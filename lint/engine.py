@@ -264,6 +264,10 @@ def _declarations(body, base_pos):
 # CSS scanner
 # ---------------------------------------------------------------------------
 
+# TDS016 — label-role classes whose tier the comfortable-density target covers.
+LABEL_ROLES = ("badge", "nav-label", "cmd-group")
+
+
 def scan_css(path, text, spec, base_line=1, suppressions=None):
     findings = []
     css = strip_css_comments(text)
@@ -326,6 +330,20 @@ def scan_css(path, text, spec, base_line=1, suppressions=None):
                     and not spec.allow_token_overrides
                     and not path.endswith("tokens.css")):
                 add("TDS009", pos, "redefines system token --%s" % prop[2:], excerpt)
+        # TDS016 — label tier (info): label-role classes below the comfortable target
+        for cls in LABEL_ROLES:
+            if not re.search(r"\." + re.escape(cls) + r"(?![\w-])", selector):
+                continue
+            for prop, val, pos in _declarations(body, bpos):
+                if prop == "font-size":
+                    m = re.match(r"^([\d.]+)(px|rem)$", val)
+                    if m and ((m.group(2) == "px" and float(m.group(1)) < 13)
+                              or (m.group(2) == "rem" and float(m.group(1)) < 0.8125)):
+                        add("TDS016", pos,
+                            "label-role .%s below the comfortable label target "
+                            "(13px at the 16px root)" % cls,
+                            "font-size: %s" % val)
+            break
     return findings
 
 

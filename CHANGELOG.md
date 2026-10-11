@@ -1,5 +1,17 @@
 # Changelog - Triage
 
+## 0.13.0-rc1 - 2026-10-11
+
+- Proposal merges from the 2026-10 review (owner-approved 2026-10-11),
+  snapshot 0.13.0: `verification-levels` (evidence declarations; the ladder
+  itself is repo-side in VERIFICATION.md), `density-borders` (label
+  typography tiering), `provenance-contract` (new component
+  `component/prov`).
+- Artifacts 80 -> 81 (component/prov), rules 19 -> 20 (TDS016 label-tier,
+  info). Goldens unchanged at 58. Snapshot: triage-design-system 0.13.0.
+- rc label per release policy: agent-produced bump, awaiting owner
+  finalization.
+
 ## 0.12.3-rc1 - 2026-10-11
 
 - Release-machinery fix found by the independent adoption test

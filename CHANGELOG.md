@@ -9,6 +9,14 @@
   `component/prov`).
 - Artifacts 80 -> 81 (component/prov), rules 19 -> 20 (TDS016 label-tier,
   info). Goldens unchanged at 58. Snapshot: triage-design-system 0.13.0.
+- Also ships the **verification contract** (`verification.json`): 14 checks
+  (10 mechanical + 4 explicit REVIEW entries), authored and calibrated in
+  response to the adoption test (da verify previously aborted for every
+  consumer). Calibrated clean against the recipe-box consumer build plus
+  the list / dashboard / viewer examples; a mutated build trips
+  square-geometry, type-face, label-tier and focus-ring checks while the
+  rest stay green. Record: docs/verification/10-triage-contract.md (meta
+  repository).
 - rc label per release policy: agent-produced bump, awaiting owner
   finalization.
 

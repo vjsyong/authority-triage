@@ -1737,7 +1737,7 @@
      "gap/20261009-024914-945233"
     ],
     "review_decision": "owner-approved 2026-10-09 (everyday phrasings for the documented 404 state)",
-    "source_commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
+    "source_commit": "3643f9252a2d26dc9d5e83d7034f9700469f26f1",
     "tests": [
      "golden: '404 page' → RESOLVED component/page-state",
      "golden: 'not found page' → RESOLVED component/page-state"

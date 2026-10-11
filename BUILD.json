@@ -1,16 +1,16 @@
 {
  "generator": "docs/synthesis/triage/tools/build_triage_pack.py",
- "built_at": "2026-10-11T10:41:02+00:00",
+ "built_at": "2026-10-11T10:42:48+00:00",
  "source": {
   "repo": "/home/xrim/triage-design-system",
-  "commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
+  "commit": "3643f9252a2d26dc9d5e83d7034f9700469f26f1",
   "version": "0.13.0"
  },
  "release": {
   "label": "triage 0.14.0-rc1",
   "kind": "promotion",
   "based_on": "triage 0.13.0-rc1",
-  "snapshot_commit": "b639311f4be754049cea14ca6ecde4bf80cbaac3",
+  "snapshot_commit": "3643f9252a2d26dc9d5e83d7034f9700469f26f1",
   "triggering_proposals": [
    "docs/evolution/round2/10-recipes-promotion-review.md (recipes promotion)"
   ],

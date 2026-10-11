@@ -1,6 +1,6 @@
 {
  "version": "0.1",
- "pack_version": "triage 0.12.2",
+ "pack_version": "triage 0.12.3-rc1",
  "cases": [
   {
    "problem": "a primary button",

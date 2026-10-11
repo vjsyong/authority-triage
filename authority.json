@@ -2,7 +2,7 @@
  "id": "triage",
  "name": "Triage",
  "format_version": "0.1",
- "version": "0.12.2",
+ "version": "0.12.3-rc1",
  "snapshot": {
   "repo": "triage-design-system (local; published at triage.seanyong.xyz)",
   "commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",

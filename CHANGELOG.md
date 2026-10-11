@@ -1,5 +1,26 @@
 # Changelog - Triage
 
+## 0.12.3-rc1 - 2026-10-11
+
+- Release-machinery fix found by the independent adoption test
+  (`docs/experiments/08-adoption-test.md`): the declared lint validator ran
+  from the pinned design-system checkout (`{snapshot}`), which is not
+  public, so `da validate` errored out for every consumer while printing a
+  vacuous score. The pack now ships a self-contained lint
+  bundle (`lint/`, `spec/rules.json`, `tokens/tokens.json`,
+  `rename-map.json`, `core/`, `VERSION`) and `validators.json` runs it with
+  `workdir {pack}`; `da validate` works from a bare clone with no external
+  checkout. The plugin/emitter (`docs/synthesis/triage/tools/
+  build_triage_pack.py`) ships the bundle on every regeneration, and the
+  drift gate covers it (16 files + `core/`).
+- Records unchanged; all prior resolutions and goldens unchanged.
+- Triggering gaps (consumer workspace, adoption run x06):
+  `gap/20261011-100129-4b5013` (triage-lint validator unavailable to
+  consumers) and `gap/20261011-101032-9ed1d0` (verification contract absent
+  from the triage pack; the contract work remains queued).
+- rc label per release policy: agent-produced bump, awaiting owner
+  finalization.
+
 ## 0.12.2 - 2026-10-09
 
 - Curation on `component/page-state`: added the aliases "404 page" and

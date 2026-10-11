@@ -1,20 +1,21 @@
 {
  "generator": "docs/synthesis/triage/tools/build_triage_pack.py",
- "built_at": "2026-10-11T10:13:25+00:00",
+ "built_at": "2026-10-11T10:18:36+00:00",
  "source": {
   "repo": "/home/xrim/triage-design-system",
   "commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",
   "version": "0.12.1"
  },
  "release": {
-  "label": "triage 0.12.2",
-  "kind": "curation",
-  "based_on": "triage 0.12.1",
+  "label": "triage 0.12.3-rc1",
+  "kind": "fix",
+  "based_on": "triage 0.12.2",
   "snapshot_commit": "f46daac3137ae8dbb15e2d88fd4b1c7a6b270498",
   "triggering_gaps": [
-   "gap/20261009-024914-945233"
+   "gap/20261011-100129-4b5013",
+   "gap/20261011-101032-9ed1d0"
   ],
-  "approved": "owner 2026-10-09"
+  "approved": "pending (rc cut by agent 2026-10-11; awaiting owner finalization)"
  },
  "counts": {
   "artifacts": 80,

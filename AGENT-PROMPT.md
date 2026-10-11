@@ -1,7 +1,7 @@
 # Implementing with the Triage authority — a prompt for coding agents
 
 You are building an interface with the **Triage design authority** (`packs/triage`,
-v0.12.1) — the app-agnostic, paper-and-ink UI system with one token source, one
+v0.12.3-rc1) — the app-agnostic, paper-and-ink UI system with one token source, one
 component runtime, and one enforceable lint gate. This prompt is for *consuming*
 the authority in a product build. (Working *inside* the triage repository itself
 is governed by its own `AGENTS.md`.)
